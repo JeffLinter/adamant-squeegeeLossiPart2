@@ -27,7 +27,9 @@ public class Login extends HttpServlet {
         }
         else
         {
-           out.println("Username or Password incorrect");
+            out.println("Username or Password incorrect");
+            out.println(" First change ");
+
            System.out.println("------ Inside FALSE  block of if(Validate.checkUser(email)) of doPost method ---- ");
            RequestDispatcher rs = request.getRequestDispatcher("index.html");
            rs.include(request, response);
