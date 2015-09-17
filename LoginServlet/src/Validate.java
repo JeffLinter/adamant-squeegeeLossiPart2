@@ -5,7 +5,7 @@ public class Validate {
 		boolean st = false;
 		try {
 
-			// loading drivers for mysql
+			// loading drivers for Mysql JAR file
 			Class.forName("com.mysql.jdbc.Driver");
 			// creating connection with the database
 			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");
